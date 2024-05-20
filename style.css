@@ -1,0 +1,575 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Ubuntu&display=swap');
+
+body {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Inter', sans-serif;
+    background-color: var(--hover);
+}
+
+:root {
+    --primary: #4F98CA;
+    --text-color: #EFFFFB;
+    --container:#272727;
+    --hover:#C4DFDF;
+    --border:#3A98B9;
+
+
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+.container {
+    width: 60%;
+    border-radius: 12px;
+    /* background-color: #070707; */
+    background-color:  var(--container) ;
+    /* box-shadow: 3px 6px 3px 6px rgb(255, 255, 255); */
+    margin: auto;
+    margin-top: 1%;
+    margin-bottom: 1%;
+    color: var(--border);
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+.left {
+    width: 50%;
+    margin-left: 3%;
+}
+
+.right {
+    width: 50%;
+    margin-left: 3%;
+}
+
+/* Head Start  */
+.image {
+
+    width: 20%;
+    height: 5%;
+    margin-bottom: 0px;
+
+    /* margin-top: 4%; */
+}
+
+.image img {
+    width: 100%;
+    height: 5%;
+    border-radius: 50%;
+}
+
+.head {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 4%;
+}
+
+.head-content h2 {
+    margin-top: 3%;
+    font-size: 1.9rem;
+    margin-bottom: 2%;
+    color: var(--primary);
+    text-transform: uppercase;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.head-content h3 {
+    font-size: 0.9rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.head-content h3 {
+    margin-top: 0px !important;
+    font-size: 1.7rem;
+    justify-content: center;
+    text-align: center;
+}
+.revealed-text {
+    overflow: hidden;
+    white-space: nowrap;
+    border-right: 0.1em solid var(--container);
+    /* Add a blinking cursor effect */
+    animation: text-reveal 3s steps(40) 1;
+}
+
+@keyframes text-reveal {
+    from {
+        width: 0;
+    }
+
+    to {
+        width: 100%;
+    }
+}
+/* Head End  */
+
+/* About Start*/
+
+.about-heading h2 {
+    margin-bottom: 3%;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.about-detail {
+    margin-top: 0px;
+    width: 92%;
+    color: var(--text-color);
+    font-size: 1.1rem;
+}
+
+/* About End*/
+
+
+
+
+/* Project Start */
+.project-head {
+    margin-top: 8%;
+}
+
+.project-head h2 {
+    margin-bottom: 6%;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.project-link li {
+    font-size: 1.5rem;
+    list-style: circle;
+    width: 100%;
+    margin-bottom: 3%;
+    color: var(--text-color);
+}
+
+.project-link li a {
+    font-size: 1.1rem;
+    color: var(--text-color);
+
+}
+
+.project-link li a:hover {
+    color: var(--hover);
+    border-bottom: 2px solid var(--border);
+}
+
+.project-link li a i {
+    font-size: 0.9rem;
+    color: var(--primary);
+}
+
+/* Project End */
+
+
+
+
+/* Conncetion Start */
+.conncetion-head {
+    margin-top: 8%;
+}
+
+.conncetion-head h2 {
+    margin-bottom: 4%;
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.conncetion-detail {
+    list-style: none;
+    color: var(--text-color);
+}
+
+.conncetion-detail a {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+.conncetion-detail a:hover {
+    color: var(--hover);
+    border-bottom: 2px solid var(--border);
+}
+.conncetion-detail li span:hover {
+    color: var(--hover);
+    border-bottom: 2px solid var(--border);
+}
+
+.conncetion-detail i {
+    margin-right: 2%;
+    margin-bottom: 2.5%;
+}
+
+/* Conncetion End */
+
+/* Education Start */
+.education-head {
+    margin-bottom: 0px;
+}
+
+.education-head h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    margin-bottom: 0px;
+    color: var(--primary);
+    text-transform: uppercase;
+}
+
+.education-ssc h3 {
+    margin-top: 2.5%;
+    font-size: 1.6rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+}
+
+.education-ssc h2 {
+    margin-top: 0.3%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: var(--text-color);
+
+}
+
+.education-ssc p {
+    margin-top: 0.3%;
+    margin-bottom: 0px;
+    color: var(--text-color);
+
+}
+
+.education-cit h3 {
+    font-size: 1.5rem;
+    margin-bottom: 0px;
+    font-weight: 600;
+
+}
+
+.education-cit h2 {
+    margin-top: 1%;
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 0px;
+    color: var(--text-color);
+}
+
+.education-cit p {
+    margin-top: 1%;
+    color: var(--text-color);
+}
+
+/* Education End*/
+
+/* Skill Start */
+.skill-head h2 {
+    color: var(--primary);
+    font-size: 1.8rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.skill-main p {
+    color: var(--text-color);
+    font-size: 1.1rem;
+    font-weight: 700;
+    position: relative;
+}
+
+.skill-main p:after {
+    content: "";
+    position: absolute;
+    background: gray;
+    height: 6px;
+    width: 60%;
+    left: 0px;
+    bottom: -11px;
+    overflow: hidden;
+    border-radius: 50px;
+}
+
+.skill-main p:before {
+    content: "";
+    position: absolute;
+    background: #eb5757;
+    height: 6px;
+    width: 0%;
+    left: 0px;
+    bottom: -11px;
+    z-index: 4;
+    border-radius: 50px;
+    overflow: hidden;
+}
+
+.skill-main .html:before {
+    background: var(--primary);
+    animation: html 3s linear forwards;
+}
+
+.skill-main .css:before {
+    background: var(--primary);
+    animation: css 3s linear forwards;
+}
+
+.skill-main .js:before {
+    background: var(--primary);
+    animation: js 3s linear forwards;
+}
+
+.skill-main .php:before {
+    background: var(--primary);
+    animation: php 3s linear forwards;
+}
+
+.skill-main .wp:before {
+    background: var(--primary);
+    animation: wp 3s linear forwards;
+}
+
+.skill-main .photo:before {
+    background: var(--primary);
+    animation: photo 3s linear forwards;
+}
+
+@keyframes html {
+    100% {
+        width: 51%;
+    }
+}
+@keyframes css {
+    100% {
+        width: 40%;
+    }
+}
+@keyframes js {
+    100% {
+        width: 25%;
+    }
+}
+@keyframes php {
+    100% {
+        width: 18%;
+    }
+}
+@keyframes wp {
+    100% {
+        width: 28%;
+    }
+}
+@keyframes photo {
+    100% {
+        width: 32%;
+    }
+}
+/* Skill End */
+
+/* Course Start */
+
+
+.course-head h2 {
+    font-size: 1.8rem;
+    font-weight: 900;
+    color: var(--primary);
+    text-transform: uppercase;
+
+}
+
+.course-densign h2 {
+    font-size: 1.2rem;
+    font-weight: 600;
+    margin-bottom: 1.3%;
+}
+
+.course-densign h3 {
+    margin-top: 0px;
+    font-weight: 300;
+    color: var(--text-color);
+    margin-bottom: 1%;
+    font-weight: 400;
+}
+
+.course-densign p {
+    margin-top: 0px;
+    color: var(--text-color);
+    font-size: 1rem;
+    font-weight: 300;
+}
+
+.course-pftp h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.course-pftp p {
+    margin-top: 1%;
+    width: 80%;
+    color: var(--text-color);
+}
+
+
+/*    //////////
+     //Button//  
+    //////////*/
+.course-pftp a input{
+    background-color: var(--primary);
+    color: var(--container);
+    border-radius: 10px ;
+    border:2px solid var(--border);
+    width: 20%; 
+    height: 3.2vh;
+    font-weight: 800;
+}
+.course-pftp a input:hover{
+    background-color: var(--container);
+    color: var(--hover);
+}
+
+/* Course End */
+/* .progress{
+  position: relative;
+  border: 2px solid blueviolet;
+  overflow: hidden;
+}
+.progress::after{
+  position: absolute;
+  height: 100%;
+  width: 10%;
+} */
+
+/* @media only screen and (min-width: 1448px) {
+    .container {
+        width: 70%;
+    }
+
+} */
+@media only screen and (max-width: 1680px) {
+    .course-pftp a input{
+        width: 27.4%; 
+        height: 4.2vh;
+        font-weight: 800;
+    }
+}
+
+@media only screen and (max-width: 1154px) {
+
+    .container {
+        width: 80%;
+    }
+
+    .container p {
+        font-size: 0.9rem;
+    }
+
+    .container li a {
+        font-size: 0.9rem;
+    }
+
+    .container li {
+        font-size: 0.9rem;
+    }
+
+    .container h2 {
+        font-size: 1.6rem;
+    }
+
+    .container h3 {
+        font-size: 1.4rem;
+    }
+
+    .course-pftp h3 {
+        font-size: 1.2rem;
+    }
+
+    .course-densign h2 {
+        font-size: 1.2rem;
+    }
+
+    .course-densign h3 {
+        font-size: 1.3rem;
+    }
+
+    .education h2 {
+        font-size: 1.1rem;
+    }
+    .course-pftp a input{
+        width: 31%; 
+        height: 4vh;
+        font-weight: 800;
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    .container {
+        width: 100%;
+    }
+
+    .container {
+        margin: 0;
+        border-radius: 0px;
+    }
+}
+
+@media only screen and (max-width: 1154px) {
+
+    .education-head h2 {
+        font-size: 1.4rem;
+    }
+}
+
+@media only screen and (max-width: 613px) {
+    .bottom {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .left {
+        width: 95%;
+    }
+
+    .right {
+        width: 95%;
+    }
+
+    .image {
+        width: 40%;
+    }
+
+    .head {
+        padding-top: 10%;
+    }
+    .course-pftp a input{
+        width: 25%; 
+        height: 4vh;
+        font-size: 0.8rem;
+        font-weight: 800;
+    }
+
+}
+@media only screen and (max-width: 370px) {
+    
+    .course-pftp a input{
+        width: 30%; 
+        height: 4vh;
+        font-size: 0.7rem;
+        font-weight: 800;
+    }
+
+}
+
